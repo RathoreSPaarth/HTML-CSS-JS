@@ -2,33 +2,185 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    
+   <style>
+       input{
+        width: 300px;
+        height: 10px;
+        -webkit-appearance: none;
+        background-image: linear-gradient(to right,#fabe28,white);
+       }
+   </style>
 </head>
 <body>
+   
     <script>
-    var head = document.createElement("div")
-    document.body.appendChild(head)
+        var header = document.createElement('div')
+        // header.setAttribute("style","border: solid black 10px;")
+    
+        var wideGrey = document.createElement("div")
+        // head.appendChild(wideGrey)
+        wideGrey.setAttribute("style","background-color: #565656; height: 35vh; z-index: -1; position: relative;")
+    
+        var image = document.createElement("img")
+        // head.appendChild(image)
+        image.setAttribute("src","https://qph.fs.quoracdn.net/main-thumb-51219796-200-xyqpkmwchxwuitalwwmerqvlizbkvtlh.jpeg")
+        image.setAttribute("style","border-radius: 50%; margin-left: 42%;border: dotted; border-color: #fabe28; border-width: 7px; margin-top:-25%; z-index:2;")
+    
+        var yellowOverlap = document.createElement("div")
+        // head.appendChild(yellowOverlap)
+        yellowOverlap.setAttribute("style","background-color: #fabe28; z-index: 2; height: 20vh; width: 80vh; position: absolute; margin-left: 425px; margin-top: -45px; border-radius: 10px; ");
+        
+        var myName = document.createElement("h1")
+        myName.setAttribute("style","font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center; margin-top: 40px; font-size: 40px;")
+        myName.textContent = "PAARTH S RATHORE"
+    
+        var whiteNarrow = document.createElement("div")
+        // head.appendChild(whiteNarrow)
+        whiteNarrow.setAttribute("style","background-color: #eeeeee; height: 8vh; z-index: 1;")
+    
+        var greyNarrow = document.createElement("div")
+        // head.appendChild(greyNarrow)
+        greyNarrow.setAttribute ("style","background-color: #565656; height: 8vh; z-index: 1;")
 
-    var wideGrey = document.createElement("div")
-    head.appendChild(wideGrey)
-    wideGrey.setAttribute("style","background-color: #565656; height: 35vh; z-index: 1; position: relative;")
+        var details = document.createElement("div")
+        details.setAttribute("style","text-align: center; margin-top: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;")
+        details.textContent = "Greenfields Colony, Faridabad 121003 | 7397235288 | paarth@gmail.com | www.paarthSrathore.com"
 
-    var image = document.createElement("img")
-    head.appendChild(image)
-    image.setAttribute("src","https://qph.fs.quoracdn.net/main-thumb-51219796-200-xyqpkmwchxwuitalwwmerqvlizbkvtlh.jpeg")
-    image.setAttribute("style","border-radius: 50%; margin-left: 42%;border: dotted; border-color: #fabe28; border-width: 7px;")
+        var line = document.createElement("hr")
 
-    var yellowOverlap = document.createElement("div")
-    head.appendChild(yellowOverlap)
-    yellowOverlap.style.setAttribute = "background-color: #fabe28; z-index: 2; height: 20vh; width: 80vh; position: absolute; margin-left: 425px; margin-top: -45px; border-radius: 10px; ";
+        var midSection = document.createElement("div")
+        var leftSection = document.createElement("div")
+        leftSection.setAttribute("style","margin-left: 0; margin-right: 50%; border-right: solid #565656 3px;")
+        var rightSection = document.createElement("div")
+        rightSection.setAttribute("style","margin-left: 54%; width: 50%; font-family: 'Courier New', Courier, monospace; margin-top: -155vh;")
 
-    var whiteNarrow = document.createElement("div")
-    head.appendChild(whiteNarrow)
-    whiteNarrow.style.setAttribute = "background-color: #eeeeee; height: 8vh; z-index: 1;"
+        /////////////////////////////////////////////////
 
-    var greyNarrow = document.createElement("div")
-    head.appendChild(greyNarrow)
-    greyNarrow.style.setAttribute = "background-color: #565656; height: 8vh; z-index: 1;"
-     </script>
+        var profile = document.createElement("div")
+        profile.setAttribute("style","margin-left: 10vh;")
+        var profileHead = document.createElement("h1")
+        profileHead.setAttribute("style","font-family: 'Courier New', Courier, monospace;color: #565656;")
+        profileHead.textContent = "PROFILE"
+        var profileIntro = document.createElement("p")
+        profileIntro.setAttribute("style","font-family:  'Courier New', Courier, monospace;")
+        profileIntro.textContent = "Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous and hardworking."
+        
+        var skills = document.createElement("div")
+        skills.setAttribute("style","margin-top: 30px; margin-left: 10vh;")
+        var skillsHead = document.createElement("h2")
+        skillsHead.setAttribute("style","font-family: 'Courier New', Courier, monospace;color: #565656;")
+        skillsHead.textContent = "Skills"
+        var techSkills = document.createElement("h4")
+        techSkills.setAttribute("style","margin-left: 25%;")
+        techSkills.textContent = "TECHINCAL SKILLS"
+        var skillsPara = document.createElement("p")
+        skillsPara.setAttribute("style","font-family:  'Courier New', Courier, monospace;")
+        var skillsList = document.createElement("ul")
+        skillsList.setAttribute("style","list-style: none; font-family:  'Courier New', Courier, monospace;")
+        //li items//
+        var js = document.createElement("li")
+        js.textContent = "JavaScript"
+        var html = document.createElement("li")
+        html.textContent = "HTML"
+        var css = document.createElement("li")
+        css.textContent = "CSS"
+        var node = document.createElement("li")
+        node.textContent = "NodeJS"
+        var react = document.createElement("li")
+        react.textContent = "React"
+        var deploy = document.createElement("li")
+        deploy.textContent = "Deployment"
+        /////
+        var inputElementjs = document.createElement("input")
+        var inputElementhtml = document.createElement("input")
+        var inputElementcss = document.createElement("input")
+        var inputElementnode = document.createElement("input")
+        var inputElementreact = document.createElement("input")
+        var inputElementdeploy = document.createElement("input")
+
+        inputElementjs.setAttribute("value","80")
+        inputElementjs.setAttribute("type","range")
+        inputElementjs.setAttribute("min","1")
+        inputElementjs.setAttribute("max","100") 
+        inputElementjs.setAttribute("style","margin-left:100px")
+
+
+        inputElementhtml.setAttribute("value","80")
+        inputElementhtml.setAttribute("type","range")
+        inputElementhtml.setAttribute("min","1")
+        inputElementhtml.setAttribute("max","100") 
+        inputElementhtml.setAttribute("style","margin-left:157px") 
+
+        inputElementcss.setAttribute("value","80")
+        inputElementcss.setAttribute("type","range")
+        inputElementcss.setAttribute("min","1")
+        inputElementcss.setAttribute("max","100")  
+        inputElementcss.setAttribute("style","margin-left:167px")
+
+        inputElementnode.setAttribute("value","80")
+        inputElementnode.setAttribute("type","range")
+        inputElementnode.setAttribute("min","1")
+        inputElementnode.setAttribute("max","100")
+        inputElementnode.setAttribute("style","margin-left:138px")  
+
+        inputElementreact.setAttribute("value","80")
+        inputElementreact.setAttribute("type","range")
+        inputElementreact.setAttribute("min","1")
+        inputElementreact.setAttribute("max","100")  
+        inputElementreact.setAttribute("style","margin-left:148px")
+
+        inputElementdeploy.setAttribute("value","80")
+        inputElementdeploy.setAttribute("type","range")
+        inputElementdeploy.setAttribute("min","1")
+        inputElementdeploy.setAttribute("max","100")
+        inputElementdeploy.setAttribute("style","margin-left:100px")       
+        
+        
+        
+        
+        
+        header.appendChild(wideGrey)
+        header.appendChild(image)
+        header.appendChild(yellowOverlap)
+        yellowOverlap.appendChild(myName)
+        header.appendChild(whiteNarrow)
+        header.appendChild(greyNarrow)
+        document.body.appendChild(header)
+        document.body.appendChild(details)
+        document.body.appendChild(line)
+
+        profile.appendChild(profileHead)
+        profile.appendChild(profileIntro)
+        ////
+       //skills
+       skillsHead.appendChild(techSkills)
+       skills.appendChild(skillsHead)
+       js.appendChild(inputElementjs)
+       html.appendChild(inputElementhtml)
+       css.appendChild(inputElementcss)
+       node.appendChild(inputElementnode)
+       react.appendChild(inputElementreact)
+       deploy.appendChild(inputElementdeploy)
+       skillsList.appendChild(js)
+       skillsList.appendChild(html)
+       skillsList.appendChild(css)
+       skillsList.appendChild(node)
+       skillsList.appendChild(react)
+       skillsList.appendChild(deploy)
+       skillsPara.appendChild(skillsList)
+       skills.appendChild(skillsPara)
+        //////
+        leftSection.appendChild(profile)
+        leftSection.appendChild(skills)
+        /////////////////
+        
+        midSection.appendChild(leftSection)
+        document.body.appendChild(midSection)
+
+         </script>
 </body>
 </html>
+
+
+
+
