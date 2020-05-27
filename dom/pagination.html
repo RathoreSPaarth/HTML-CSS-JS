@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINATION</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+        text-align: center;
+    }
+    
+    button:first-child{
+        border: 2px solid black;
+        background-color: #4CAF50;
+        cursor: pointer;
+        height: 40px;
+        width: 80px;
+        margin-top: 20px;
+        color: antiquewhite;
+       
+    }
+    button:not(:first-child){
+        border-right: 2px solid black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        background-color: #4CAF50;
+        cursor: pointer;
+        height: 40px;
+        width: 80px;
+        margin-top: 20px;
+        color: antiquewhite;
+    }
+    #json{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 800;
+        border-radius: 10px;
+        background-color: cadetblue;
+    }
+</style>
+<body>
+    <h1 style="font-family:cursive;">
+        PAGINATION
+    </h1>
+    <div id="json" style="width: 50%; height: 75vh; margin-left: 25%; border: solid black 1px;">
+        <div id="id1">
+
+        </div>
+        <div id="name1">
+
+        </div>
+        <div id="email1">
+
+        </div>
+        <div id="id2">
+
+        </div>
+        <div id="name2">
+
+        </div>
+        <div id="email2">
+
+        </div>
+        <div id="id3">
+
+        </div>
+        <div id="name3">
+
+        </div>
+        <div id="email3">
+
+        </div>
+        <div id="id4">
+
+        </div>
+        <div id="name4">
+
+        </div>
+        <div id="email4">
+
+        </div>
+        <div id="id5">
+
+        </div>
+        <div id="name5">
+
+        </div>
+        <div id="email5">
+
+        </div>
+    </div>
+    <div id="button-panel" style="display: flex; justify-content: center;">
+        <button id="1" onclick="press1()">1</button>
+        <button id="2" onclick="press2()">2</button>
+        <button id="3" onclick="press3()">3</button>
+        <button id="4" onclick="press4()">4</button>
+        <button id="5" onclick="press5()">5</button>
+        <button id="6" onclick="press6()">6</button>
+        <button id="7" onclick="press7()">7</button>
+        <button id="8" onclick="press8()">8</button>
+        <button id="9" onclick="press9()">9</button>
+        <button id="10" onclick="press10()">10</button>
+    </div>
+    <script>
+        function press1(){
+            document.getElementById('id1').textContent = "ID: 1"
+            document.getElementById('name1').textContent = "NAME: Laura Sengar"
+            document.getElementById('email1').textContent = "EMAIL: xander_collier@yahoo.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 2"
+            document.getElementById('name2').textContent = "NAME: Wilbern Weber"
+            document.getElementById('email2').textContent = "EMAIL: wilbern@gmail.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 3"
+            document.getElementById('name3').textContent = "NAME: Tyrique Hyden"
+            document.getElementById('email3').textContent = "EMAIL: hyden@gmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 4"
+            document.getElementById('name4').textContent = "NAME: Leena Belly"
+            document.getElementById('email4').textContent = "EMAIL: leena@gmail.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 5"
+            document.getElementById('name5').textContent = "NAME: Vladimir Keeling"
+            document.getElementById('email5').textContent = "EMAIL: vladimir@yahoo.com"
+        }
+        function press2(){
+            document.getElementById('id1').textContent = "ID: 6"
+            document.getElementById('name1').textContent = "NAME: Kelie Corona "
+            document.getElementById('email1').textContent = "EMAIL: kelie@hotmail.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 7"
+            document.getElementById('name2').textContent = "NAME: Mark"
+            document.getElementById('email2').textContent = "EMAIL: mark@gmail.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 8"
+            document.getElementById('name3').textContent = "NAME: Rob tohey"
+            document.getElementById('email3').textContent = "EMAIL: rob123@gmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 9"
+            document.getElementById('name4').textContent = "NAME: Sam Curran"
+            document.getElementById('email4').textContent = "EMAIL: samcurran@yahoo.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 10"
+            document.getElementById('name5').textContent = "NAME: Jason Holder"
+            document.getElementById('email5').textContent = "EMAIL: jasonhol99@hotmail.com"
+        }
+
+        function press3(){
+            document.getElementById('id1').textContent = "ID: 11"
+            document.getElementById('name1').textContent = "NAME: Mathews Rangana"
+            document.getElementById('email1').textContent = "EMAIL: mathews98@gmail.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 12"
+            document.getElementById('name2').textContent = "NAME: Andrew Smith"
+            document.getElementById('email2').textContent = "EMAIL: smith09aus@gmail.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 13"
+            document.getElementById('name3').textContent = "NAME: David Warner"
+            document.getElementById('email3').textContent = "EMAIL: davidaus@hotmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 14"
+            document.getElementById('name4').textContent = "NAME: Adam Ohio"
+            document.getElementById('email4').textContent = "EMAIL: zampaAdam@gail.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 15"
+            document.getElementById('name5').textContent = "NAME: Sangakara"
+            document.getElementById('email5').textContent = "EMAIL: sangy@gmail.com"
+        }
+
+        function press4(){
+            document.getElementById('id1').textContent = "ID: 16"
+            document.getElementById('name1').textContent = "NAME: Chris Arnold"
+            document.getElementById('email1').textContent = "EMAIL: chrisarnold@yahoo.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 17"
+            document.getElementById('name2').textContent = "NAME: Kelly"
+            document.getElementById('email2').textContent = "EMAIL: karen@gmail.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 18"
+            document.getElementById('name3').textContent = "NAME: Karen Cook"
+            document.getElementById('email3').textContent = "EMAIL: karencook@hotmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 19"
+            document.getElementById('name4').textContent = "NAME: Ian Bell"
+            document.getElementById('email4').textContent = "EMAIL: belL.ian@gmail.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 20"
+            document.getElementById('name5').textContent = "NAME: James Tim"
+            document.getElementById('email5').textContent = "EMAIL: jamestim@gmail.com"
+        }
+
+        function press5(){
+            document.getElementById('id1').textContent = "ID: 21"
+            document.getElementById('name1').textContent = "NAME: Delmer Marvin"
+            document.getElementById('email1').textContent = "EMAIL: Kiera62@yahoo.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 22"
+            document.getElementById('name2').textContent = "NAME: Ciara Klocko"
+            document.getElementById('email2').textContent = "EMAIL: Harvey76@yahoo.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 23"
+            document.getElementById('name3').textContent = "NAME: Quentin O'Kon"
+            document.getElementById('email3').textContent = "EMAIL: Amely_Cummings2@yahoo.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 24"
+            document.getElementById('name4').textContent = "NAME: Alanis Klocko"
+            document.getElementById('email4').textContent = "EMAIL: Johathan.Champlin69@gmail.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 25"
+            document.getElementById('name5').textContent = "NAME: Hanna Gottlieb"
+            document.getElementById('email5').textContent = "EMAIL: Edna62@hotmail.com"
+        }
+
+        function press6(){
+            document.getElementById('id1').textContent = "ID: 26"
+            document.getElementById('name1').textContent = "NAME: Christiana Bergnaum"
+            document.getElementById('email1').textContent = "EMAIL: Donnie.Paucek22@gmail.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 27"
+            document.getElementById('name2').textContent = "NAME: Reid Stehr"
+            document.getElementById('email2').textContent = "EMAIL: Hiram69@gmail.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 28"
+            document.getElementById('name3').textContent = "NAME: Evans Ward"
+            document.getElementById('email3').textContent = "EMAIL: Liliane72@hotmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 29"
+            document.getElementById('name4').textContent = "NAME: Mathew Lueilwitz"
+            document.getElementById('email4').textContent = "EMAIL: Mariah.Hagenes@yahoo.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 30"
+            document.getElementById('name5').textContent = "NAME: Romaine Robel"
+            document.getElementById('email5').textContent = "EMAIL: Sheila19@yahoo.com"
+        }
+
+        function press7(){
+            document.getElementById('id1').textContent = "ID: 31"
+            document.getElementById('name1').textContent = "NAME: Miss Enos Davis"
+            document.getElementById('email1').textContent = "EMAIL: Kolby.Grady@hotmail.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 32"
+            document.getElementById('name2').textContent = "NAME: Easton Daugherty"
+            document.getElementById('email2').textContent = "EMAIL: Malcolm.Schuster11@hotmail.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 33"
+            document.getElementById('name3').textContent = "NAME: Linnea Borer"
+            document.getElementById('email3').textContent = "EMAIL: Jarrett_Hegmann2@hotmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 34"
+            document.getElementById('name4').textContent = "NAME: Misael Abernathy IV"
+            document.getElementById('email4').textContent = "EMAIL: Robbie42@yahoo.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 35"
+            document.getElementById('name5').textContent = "NAME: Mr. Gerda Jerde"
+            document.getElementById('email5').textContent = "EMAIL: Gustave36@hotmail.com"
+        }
+
+        function press8(){
+            document.getElementById('id1').textContent = "ID: 36"
+            document.getElementById('name1').textContent = "NAME: Gilda Huel"
+            document.getElementById('email1').textContent = "EMAIL: Stephania.Hintz@gmail.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 37"
+            document.getElementById('name2').textContent = "NAME: Javon Walker"
+            document.getElementById('email2').textContent = "EMAIL: Lamar_Bailey39@yahoo.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 38"
+            document.getElementById('name3').textContent = "NAME: Stewart King"
+            document.getElementById('email3').textContent = "EMAIL: Chasity_Jenkins82@gmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 39"
+            document.getElementById('name4').textContent = "NAME: Cortez Lueilwitz"
+            document.getElementById('email4').textContent = "EMAIL: Lelia.Mitchell43@gmail.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 40"
+            document.getElementById('name5').textContent = "NAME: Ora Kilback"
+            document.getElementById('email5').textContent = "EMAIL: Matt25@gmail.com"
+        }
+
+        function press9(){
+            document.getElementById('id1').textContent = "ID: 41"
+            document.getElementById('name1').textContent = "NAME: Lera Macejkovic"
+            document.getElementById('email1').textContent = "EMAIL: Jamal.Donnelly45@hotmail.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 42"
+            document.getElementById('name2').textContent = "NAME: Avery Nienow"
+            document.getElementById('email2').textContent = "EMAIL: Hudson_Bernhard47@yahoo.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 43"
+            document.getElementById('name3').textContent = "NAME: Dr. Katrine Ryan"
+            document.getElementById('email3').textContent = "EMAIL: Colten40@gmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 44"
+            document.getElementById('name4').textContent = "NAME: Florida Kulas"
+            document.getElementById('email4').textContent = "EMAIL: Alejandra_Bernhard@yahoo.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 45"
+            document.getElementById('name5').textContent = "NAME: Chadrick Simonis"
+            document.getElementById('email5').textContent = "EMAIL: Reymundo.Doyle@gmail.com"
+        }
+
+        function press10(){
+            document.getElementById('id1').textContent = "ID: 46"
+            document.getElementById('name1').textContent = "NAME: Leena Belly"
+            document.getElementById('email1').textContent = "EMAIL: keena@gmail.com"
+            ////
+            document.getElementById('id2').textContent = "ID: 47"
+            document.getElementById('name2').textContent = "NAME: Mr. Gerda Jerde"
+            document.getElementById('email2').textContent = "EMAIL: Lamar_Bailey39@yahoo.com"
+            ////
+            document.getElementById('id3').textContent = "ID: 48"
+            document.getElementById('name3').textContent = "NAME: Linnea Borer"
+            document.getElementById('email3').textContent = "EMAIL: Malcolm.Schuster11@hotmail.com"
+            ////
+            document.getElementById('id4').textContent = "ID: 49"
+            document.getElementById('name4').textContent = "NAME: Cortez Lueilwitz"
+            document.getElementById('email4').textContent = "EMAIL: cortezleu@gmail.com"
+            ////
+            document.getElementById('id5').textContent = "ID: 50"
+            document.getElementById('name5').textContent = "NAME: Paarth"
+            document.getElementById('email5').textContent = "EMAIL: paarth@gmail.com"
+        }
+
+        
+    </script>
+</body>
+
+</html>
